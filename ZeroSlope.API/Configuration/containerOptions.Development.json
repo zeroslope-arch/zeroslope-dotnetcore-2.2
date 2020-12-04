@@ -1,0 +1,30 @@
+﻿{
+	"Database": {
+		"SqlConnectionString": "Server=localhost,1401;Database=ZeroSlope;User Id=sa;Password=P4ssw0rd!;"
+	},
+	"Caching": {
+		"RedisHost": "127.0.0.1",
+		"RedisePort": 6379,
+		"RedisDatabaseId": 0
+	},
+  "Token": {
+    "Issuer": "ZeroSlope",
+    "Audience": "ZeroSlope",
+    "Secret": "27071108-4093-4F21-93C5-E437B2C24BD6",
+    "ExpirationInMinutes":  60
+  },
+  "CORS": {
+    "PolicyName": "DefaultCorsPolicy",
+    "Origins": [
+      "http://localhost:6600"
+    ]
+  },
+  "Consul": {
+    "RegisterAddress": "http://localhost:8500",
+    "ServiceName":  "ZeroSlopeApi",
+    "ServiceId": "FAED3941-B00C-4F28-9303-A7E8294C1764",
+    "Dependencies": [
+      "ZeroSlope.Dapper", "FakeServiceName"
+    ]
+  }
+}

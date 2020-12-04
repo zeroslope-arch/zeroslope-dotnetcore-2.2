@@ -1,0 +1,26 @@
+﻿{
+	"Database": {
+		"SqlConnectionString": ""
+	},
+	"Caching": {
+		"RedisHost": "127.0.0.1",
+		"RedisePort": 6379,
+		"RedisDatabaseId": 0
+	},
+  "Token": {
+    "Issuer": "ZeroSlope",
+    "Audience": "ZeroSlope",
+    "Secret": "",
+    "ExpirationInMinutes":  0
+  },
+  "CORS": {
+    "PolicyName": "DefaultCorsPolicy",
+    "Origins": []
+  },
+  "Consul": {
+    "RegisterAddress": "",
+    "ServiceName": "",
+    "ServicePort": 0,
+    "Dependencies": []
+  }
+}
